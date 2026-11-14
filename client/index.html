@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#0d0f1a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔫</text></svg>">
+<title>حرب الشلة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<div id="hud" class="hidden">
+  <div id="board"></div>
+  <div class="side">
+    <div id="me"></div>
+    <div class="row"><button id="mute">🔊</button><button id="share" class="hidden">🔗</button><button id="leave">🚪</button></div>
+  </div>
+</div>
+<div id="feed"></div>
+<div id="dead" class="hidden"></div>
+<div id="streak"></div>
+<div id="banner" class="hidden"><span id="bannerT"></span></div>
+<div id="toast" class="hidden"></div>
+
+<div id="end" class="hidden">
+  <h2>🏁 خلص الجيم!</h2>
+  <div id="winner"></div>
+  <table id="results"></table>
+  <h3>🌍 أحسن اللاعبين بالعالم</h3>
+  <table id="global"></table>
+  <div id="nextIn"></div>
+</div>
+
+<div id="menu">
+  <h1>حرب <span>الشلة</span></h1>
+  <p class="sub">الإصبع الشمال بيحرك، واليمين بيوجّه وبيطخ. لمّوا الهدايا ❤️ ⚡ 🔱 🛡️ 💣</p>
+  <input id="nm" maxlength="14" placeholder="اسمك" autocomplete="off">
+  <div class="colors" id="cols"></div>
+  <button class="btn red" id="quick">⚡ العب هلأ</button>
+  <button class="btn dark" id="create">🔒 غرفة خاصة لصحابي</button>
+  <div class="joinrow"><input id="code" inputmode="numeric" maxlength="6" placeholder="رقم الغرفة"><button class="btn blue" id="join">ادخل</button></div>
+  <p id="net"></p>
+  <div id="menuTop"></div>
+</div>
+
+<script src="config.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
